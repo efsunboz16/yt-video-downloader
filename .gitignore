@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.mp4
+*.webm
+
+# React / Node
+node_modules/
+dist/
+.env
+
+# Diğer
+.DS_Store
