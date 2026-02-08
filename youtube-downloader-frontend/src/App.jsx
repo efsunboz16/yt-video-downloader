@@ -14,7 +14,7 @@ function App() {
     setStatus('loading');
     
     try {
-        const response = await axios.post('http://localhost:5000/download', {
+        const response = await axios.post('https://yt-video-downloader-production.up.railway.app/download', {
             url: url,
             quality: quality
         }, { 
