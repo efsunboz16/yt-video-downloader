@@ -31,7 +31,7 @@ def download_video():
         'noplaylist': True,
         'quiet': False,
         'overwrites': True,
-        # Cookie dosyasını kullan (Android kodu YOK)
+        # Cookie varsa kullan
         'cookiefile': COOKIE_FILE if os.path.exists(COOKIE_FILE) else None,
         'postprocessors': [{'key': 'FFmpegVideoConvertor', 'preferedformat': 'mp4'}],
     }

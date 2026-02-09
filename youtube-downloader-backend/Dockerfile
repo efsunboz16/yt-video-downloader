@@ -2,9 +2,10 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# Node.js (v18) ve FFmpeg kurulumu - KESİN ÇÖZÜM
+# Node.js (v18) ve FFmpeg kurulumu - GARANTİLİ YÖNTEM
+# Önce curl ve gnupg kuruyoruz, sonra Node.js deposunu ekleyip kuruyoruz.
 RUN apt-get update && \
-    apt-get install -y curl ffmpeg git && \
+    apt-get install -y curl ffmpeg git gnupg && \
     curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
     apt-get install -y nodejs && \
     apt-get clean && \
